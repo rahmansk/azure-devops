@@ -16,6 +16,6 @@ steps:
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
-    echo Dude is that so funny using multiple scripts ;)
+    echo "Dude is that so funny using multiple scripts ;)"
     echo See https://aka.ms/yaml
   displayName: 'Multi-line script'

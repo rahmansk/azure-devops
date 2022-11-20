@@ -16,12 +16,6 @@ jobs:
   - script: echo "Job1!!"
     displayName: 'Job 1 executed!!'
 
-
-pool:
-  name: Default
-  vmImage: ubuntu-latest
-
-jobs:
 - job: job2
   steps:
   - script: echo "Job2!!"

@@ -17,14 +17,14 @@ jobs:
     displayName: 'Job 1 executed!!'
 
 - job: job2
-  steps:
   dependsOn: job3
+  steps:
   - script: echo "Job2!!"
     displayName: "Job 2 Executed!!"
 
 
 - job: job3
-  steps:
   dependsOn: job1
+  steps:
   - script: echo "Job2!!"
     displayName: "Job 2 Executed!!"

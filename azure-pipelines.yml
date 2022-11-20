@@ -18,5 +18,13 @@ jobs:
 
 - job: job2
   steps:
+  dependsOn: job3
+  - script: echo "Job2!!"
+    displayName: "Job 2 Executed!!"
+
+
+- job: job3
+  steps:
+  dependsOn: job1
   - script: echo "Job2!!"
     displayName: "Job 2 Executed!!"

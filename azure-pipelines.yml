@@ -10,7 +10,7 @@ pool:
   name: Default
   vmImage: ubuntu-latest
 
-Jobs:
+jobs:
 - job: Job1
   steps:
   - script: echo "Job1!!"
@@ -18,5 +18,5 @@ Jobs:
 
 - job: job2
   steps:
-    - script: "Job2!!"
-      displayName: "Job 2 Executed!!"
+  - script: "Job2!!"
+    displayName: "Job 2 Executed!!"

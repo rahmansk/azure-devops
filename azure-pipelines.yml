@@ -10,12 +10,13 @@ pool:
   name: Default
   vmImage: ubuntu-latest
 
-steps:
-- script: echo "HEY HI MANN!!!"
-  displayName: 'One-line script'
+Jobs:
+- job: Job1
+  steps:
+  - script: echo "Job1!!"
+    displayName: 'Job 1 executed!!'
 
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo "Dude is that so funny using multiple scripts ;)"
-    echo See https://aka.ms/yaml
-  displayName: 'Multi-line script'
+- job: job2
+  steps:
+    - script: "Job2!!"
+      displayName: "Job 2 Executed!!"
